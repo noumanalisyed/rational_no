@@ -57,4 +57,10 @@ public class RationalNumber extends Object{
            }
        }
    }
+
+   public RationalNumber mul(RationalNumber rationalNumber){
+       int nume = this.numerator * rationalNumber.numerator;
+       int deno = this.denominator * rationalNumber.denominator;
+       return new RationalNumber(nume,deno);
+   }
 }
