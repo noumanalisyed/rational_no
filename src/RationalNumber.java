@@ -63,4 +63,9 @@ public class RationalNumber extends Object{
        int deno = this.denominator * rationalNumber.denominator;
        return new RationalNumber(nume,deno);
    }
+   public RationalNumber div(RationalNumber rationalNumber){
+       int nume = this.numerator * rationalNumber.denominator;
+       int deno = this.denominator * rationalNumber.numerator;
+       return new RationalNumber(nume,deno);
+   }
 }
